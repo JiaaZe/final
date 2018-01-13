@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<title>第16組</title>
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<meta name="robots" content="index,follow" />
-<link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" />
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
-<link rel="stylesheet" href="css/style.css" type="text/css" />
-<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>第16組</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="index,follow" />
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/navvv.css" />
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-<script type="text/javascript" src="js/all-in-one-min.js"></script>
-<script type="text/javascript" src="js/setup.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript">
-$(window).load(function(){
-	$('#demo-side-bar').removeAttr('style');
-});
-</script>
-<style type="text/css">
-.demobar{display:none;}
-#demo-side-bar{top:53px!important;left:90%!important;display:block!important;}
-</style>
- <!--Dynamically creates ads markup-->
-	<!-- Header -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="js/all-in-one-min.js"></script>
+		<script type="text/javascript" src="js/setup.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('#demo-side-bar').removeAttr('style');
+			});
+		</script>
+		<style type="text/css">
+			.demobar{display:none;}
+			#demo-side-bar{top:53px!important;left:90%!important;display:block!important;}
+		</style>
+		<style>
+			#map {
+            height: 330px;
+            width: 100%;
+          }
+		</style>
+	</head>
+
 	<header class="header_bg clearfix">
 		<div class="container clearfix">
 								<div class="logo">
@@ -66,18 +71,17 @@ $(window).load(function(){
 		<!-- START CONTENT SIDE -->
 
 
-			<div class="clear"></div>
-
+		<div style="text-align:center;display:table;margin:0 auto">
 			<ul id="myTab" class="nav nav-tabs">
-				<li class="active"><a href="#zijia" data-toggle="tab">自駕</a></li>
-				<li><a href="#gong" data-toggle="tab">公共交通</a></li>
-				<li><a href="#baoche" data-toggle="tab">包車</a></li>
+				<li class="active" style="display:table-cell;"><a href="#zijia" data-toggle="tab">自駕</a></li>
+				<li style="display:table-cell;"><a href="#gong" data-toggle="tab">公共交通</a></li>
+				<li style="display:table-cell;"><a href="#baoche" data-toggle="tab">包車</a></li>
 			</ul>
+		</div>
 
-			<div id="myTabContent"class="tab-content" style="border:1px solid #CCC;border-top:0px;height:400px;width:900px;margin-bottom:20px;overflow:scroll;">
 
 			<div id="myTabContent" class="tab-content">
-				<div class="tab-pane fade in active" id="zijia">
+				<section class="tab-pane fade in active" id="zijia">
 					<h4><strong style="color:blue">國道三號行駛路線</strong></h4>
             <strong>建議路線</strong><br>
             <span style="color:#000080;">國道三號(中二高)→霧峰系統214K→國道六號起點0k→埔里端出口(國六終點)→左轉台14線→霧社(Y字路口左轉)→台14甲線→清境農場</span><br>
@@ -114,9 +118,9 @@ $(window).load(function(){
             <script async defer
           	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbEftm3aTKij1PSYnpk_VEjRLGNLwpLtk&callback=initMap">
             </script>
-				</div>
+				</section>
 
-				<div class="tab-pane fade" id="gong">
+				<section class="tab-pane fade" id="gong">
 						<h4><strong style="color:blue">台北地區</strong></h4>
             	由台北轉運站搭乘國光客運 → 埔里 → 換南投客運往松崗、翠峰至清境農場。<br>
               (全程約260公里，車行約5小時)<br>
@@ -149,16 +153,15 @@ $(window).load(function(){
           	台中(清泉崗)機場直達清境<br>
           	接機時間：10:20、12:00、14:30、服務電話：049-2801399<br>
         	<a href="http://www.cingjingbus.tw/" target="_blank" title="連結至OKBUS網站(另開視窗)">連結至OKBUS網站(另開視窗)</a>
-				</div>
+				</section>
 
-				<div class="tab-pane fade" id="baoche">
+				<section class="tab-pane fade" id="baoche">
 					<h4><strong style="color:blue	">台北至清境包車單接送</strong></h4>
             <a style="color:#00CC33" href="http://www.mafengwo.cn/sales/2212447.html?cid=1010402&sourceFrom=zhuti-16405-2000">點我開啟鏈接</a><br/><br/>
             <h4><strong style="color:blue">台中至清境拼車直達</strong></h4>
             <a style="color:#00CC33" href="http://www.mafengwo.cn/sales/2131716.html?cid=1010402&sourceFrom=zhuti-16405-2000">點我開啟鏈接</a>
-				</div>
+				</section>
 
-			</div>
 			</div>
 
 		<div class="clear padding40"></div>
@@ -192,6 +195,5 @@ $(window).load(function(){
 
     </div>
     <!--wrapper end-->
-
 </body>
 </html>
