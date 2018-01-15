@@ -4,7 +4,7 @@
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$message=$_POST['message'];
-		$sqlinsert="INSERT INTO users (name,email,commemt) VALUES('$name','$email','$message')";
+		$sqlinsert="INSERT INTO users (name,email,comment) VALUES('$name','$email','$message')";
 
 		if(!mysqli_query($db,$sqlinsert)){
 			die('error inserting new record');
