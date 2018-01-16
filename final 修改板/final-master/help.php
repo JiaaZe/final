@@ -66,6 +66,8 @@ $(window).load(function(){
 		</div>
 	</header>
     <!-- /Header -->
+	</head>
+	<body style="overflow-x: hidden;overflow-y: scroll">
     <!-- START CONTENT -->
     <section class="container clearfix">
 		<!-- START PAGE INFO -->
